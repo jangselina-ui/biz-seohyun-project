@@ -56,7 +56,7 @@ ALBUMS = [
         "youtube_url": "https://www.youtube.com/watch?v=rR_AVo1RaNw",
         "theme_color": "rgba(6, 182, 212, 0.1)",
         "tracks": ["1. INTRO", "2. 개화 (Flowering) [TITLE]"],
-        "info": "누군가에게 건네는 편지의 첫 말머리인 'DEAR.'는 리스너에게 건네는 첫인사이자, LUCY만의 음악세계로 초대하는 편지의 의미를 담고 있다. 스트링이 돋보이는 유니크한 스타일의 밴드팝 음악을 통해 그들의 메시지를 전한다."
+        "info": "머금고 있지만 느끼지 못했던 기억들과, 이미 흘러가 버린 기억들에 대해."
     },
     {
         "id": "panorama",
@@ -145,6 +145,17 @@ ALBUMS = [
         "theme_color": "rgba(79, 70, 229, 0.1)",
         "tracks": ["1. 뜨거 (Hot!)", "2. 아지랑이 (Haze) [TITLE]", "3. Magic", "4. 내 가슴속에 들어온 낙엽은"],
         "info": "누구나 겪게 되는 '열병'의 시기를 관통하며 한층 더 성숙해진 청춘의 모습을 담은 앨범이다. 열병을 이겨내고 있는 이들에게는 견뎌낼 힘을, 이미 겪은 이들에게는 위로와 다음 열병을 이겨낼 용기를 전하고자 하는 마음을 담았다. 타이틀곡 '아지랑이'를 비롯해 여름의 열기를 표현한 EDM, 강렬한 록 사운드 등 다양한 장르의 곡들이 수록되어 있으며, 멤버 전원이 작업에 참여해 완성도를 높였다."
+    },
+    {
+        "id": "boogie_man",
+        "title": "Boogie Man",
+        "type": "싱글 6집",
+        "date": "2023.12.05",
+        "title_song": "Boogie Man",
+        "youtube_url": "https://youtu.be/MjMVg4sBEr8?si=flfyV1oCD03H1jww",
+        "theme_color": "rgba(139, 92, 246, 0.1)",
+        "tracks": ["1. Boogie Man [TITLE]", "2. Over The Christmas"],
+        "info": "LUCY의 염원이 담긴 모토이자 아이덴티티이다. 장르에 국한되지 않는 다양한 시도를 통해 자유로움과 에너지를 표현했으며, LUCY 특유의 꾸밈없고 현실적이면서도 따뜻한 가사들이 돋보인다."
     }
 ]
 
