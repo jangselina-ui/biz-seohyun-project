@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 
-# 1. 멤버 데이터 (MBTI 제외)
+# 1. 멤버 데이터
 MEMBERS = [
     {
         "id": "yechan",
