@@ -53,10 +53,10 @@ ALBUMS = [
         "type": "데뷔 싱글 1집",
         "date": "2020.05.08",
         "title_song": "개화 (Flowering)",
-        "youtube_url": "https://www.youtube.com/watch?v=rR_AVo1RaNw",
+        "youtube_url": "https://youtu.be/2-P-NIiLiQc?si=OLFcmvN4U9Yi4JBJ",
         "theme_color": "rgba(6, 182, 212, 0.1)",
         "tracks": ["1. INTRO", "2. 개화 (Flowering) [TITLE]"],
-        "info": "머금고 있지만 느끼지 못했던 기억들과, 이미 흘러가 버린 기억들에 대해."
+        "info": "누군가에게 건네는 편지의 첫 말머리인 ‘DEAR.'는 리스너에게 건네는 첫인사이자, LUCY만의 음악세계로 초대하는 편지의 의미를 담고 있다. 스트링이 돋보이는 유니크한 스타일의 밴드팝 음악을 통해 그들의 메시지를 전한다."
     },
     {
         "id": "panorama",
@@ -64,10 +64,10 @@ ALBUMS = [
         "type": "미니 1집",
         "date": "2020.08.13",
         "title_song": "조깅 (Jogging)",
-        "youtube_url": "https://www.youtube.com/watch?v=h6W6c1Y-X2g",
+        "youtube_url": "https://youtu.be/dh684FWByO4?si=0d38Fut-jpSVg-4T",
         "theme_color": "rgba(16, 185, 129, 0.1)",
-        "tracks": ["1. 조깅 [TITLE]", "2. 수박 (Watermelon)", "3. Straight Line", "4. Missing Call (Feat. 수란)", "5. 충분히 (Enough)", "6. Flare"],
-        "info": "시간의 흐름에 따라 혹은 다양한 풍경을 하나의 프레임 안에 담아낸 '파노라마' 사진처럼, LUCY Mini Album 'PANORAMA' 속 6개의 트랙 안에 다양한 여름의 단상들을 담아냈다. 여름날 아침의 싱그럽고 푸른 하늘을 연상케 하는 타이틀곡 '조깅'부터 한여름 밤 페스티벌의 열기를 담은 'Flare'까지, 트랙이 진행됨에 따라 점차 짙어지는 여름의 농도를 느낄 수 있도록 구성되었다."
+        "tracks": ["1. 조깅 [TITLE]", "2. 수박깨러가", "3. Straight Line", "4. Missing Call (Feat. 수란)", "5. 충분히", "6. Flare"],
+        "info": "시간의 흐름에 따라 혹은 다양한 풍경을 하나의 프레임 안에 담아낸 '파노라마' 사진처럼, LUCY Mini Album 'PANORAMA' 속 6개의 트랙 안에 다양한 여름의 단상들을 담아냈다. 여름날 아침의 싱그럽고 푸른 하늘을 연상케 하는 타이틀곡 '조깅'부터 한여름 밤 페스티벌의 열기를 담은 'Flare'까지 시간의 흐름을 읽을 수 있는 배열을 통해 점점 더 짙어지는 여름의 농도를 느낄 수 있도록 펼쳐 냈다."
     },
     {
         "id": "snooze",
@@ -75,10 +75,10 @@ ALBUMS = [
         "type": "싱글 2집",
         "date": "2020.11.12",
         "title_song": "선잠 (Snooze)",
-        "youtube_url": "https://www.youtube.com/watch?v=i90vB5g9ZtI",
+        "youtube_url": "https://youtu.be/MR9tD-dkqXI?si=21wTNwQ4BajDZHtp",
         "theme_color": "rgba(245, 158, 11, 0.1)",
-        "tracks": ["1. 선잠 (Snooze) [TITLE]", "2. 멀리 (Farther and Farther)"],
-        "info": "\"머금고 있지만 느끼지 못했던 기억들과, 이미 흘러가 버린 기억들에 대해\" 노래한 앨범이다. 몸만 커버린 어른이 되어버린 우리들이 잊고 살았던 순수한 시절의 기억을 되새기고, 낮보다 밤을 기다리게 된 회색빛의 사람들에게 잃어버린 기억과 평안을 찾길 바라는 마음을 담았다."
+        "tracks": ["1. 선잠 (Snooze) [TITLE]", "2. Farther and Farther"],
+        "info": "머금고 있지만 느끼지 못했던 기억들과, 이미 흘러가 버린 기억들에 대해"
     },
     {
         "id": "inside",
@@ -88,8 +88,8 @@ ALBUMS = [
         "title_song": "히어로 (Hero)",
         "youtube_url": "https://www.youtube.com/watch?v=eD5iJ-7S65E",
         "theme_color": "rgba(99, 102, 241, 0.1)",
-        "tracks": ["1. 히어로 [TITLE]", "2. 난로 (Stove)", "3. Outro (뒤돌아보면)"],
-        "info": "겉으로 드러나지 않은 따스한 내면의 이야기를 담은 앨범으로, 루시가 지난해 봄부터 달려온 사계절 서사를 완성하는 작품이다. 사랑하는 사람 앞에서만큼은 히어로가 되고 싶은 마음을 담은 타이틀곡 '히어로'를 통해 루시표 사랑의 메시지를 전한다. 내 자신이 보잘것없어 보여도 나를 사랑해 주는 사람을 통해 스스로의 가치를 깨닫고, 힘들 때 곁에 있어 주겠다는 따뜻한 위로를 노래한다."
+        "tracks": ["1. 히어로 [TITLE]", "2. 난로", "3. Outro (뒤돌아보면)"],
+        "info": "겉으로 드러나지 않은 따스한 내면의 이야기를 담은 앨범, 루시가 지난해 봄부터 달려온 사계절 서사를 완성하는 작품이다. 사랑하는 사람 앞에서만큼은 히어로가 되고 싶은 마음을 담은 타이틀곡 '히어로'를 통해 루시표 사랑의 메시지를 전한다. 내 자신이 보잘것없어 보여도 나를 사랑해 주는 사람을 통해 스스로의 가치를 깨닫고, 힘들 때 곁에 있어 주겠다는 따뜻한 위로를 노래한다."
     },
     {
         "id": "gatcha",
