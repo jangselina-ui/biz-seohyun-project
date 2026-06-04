@@ -1,0 +1,141 @@
+<style>
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Apply general fonts and bright background */
+.stApp {
+    font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+    background-color: #EBF4FC; /* refreshing bright sky blue tint */
+}
+
+/* Glassmorphism containers - Bright Light Version */
+.glass-card {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 16px !important;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+}
+
+/* Member card specific styling - Bright Version */
+.member-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    height: 100%;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(6, 182, 212, 0.15);
+    border-color: rgba(6, 182, 212, 0.4);
+}
+
+/* Cheering Board (Post-it style) - Bright Version */
+.cheer-card {
+    background: #FFFFFF;
+    border-left: 5px solid #06b6d4;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+}
+
+.cheer-card:hover {
+    transform: scale(1.01);
+}
+
+.cheer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.cheer-avatar {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.cheer-name {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.cheer-date {
+    font-size: 11px;
+    color: #6b7280;
+    margin-left: auto;
+}
+
+.cheer-msg {
+    color: #374151;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+/* Gradient Texts for Light Theme */
+.gradient-text-blue {
+    background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.gradient-text-mint {
+    background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.gradient-title {
+    background: linear-gradient(90deg, #0284c7 0%, #0d9488 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Media placeholder styling - Light version */
+.img-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border: 2px dashed rgba(6, 182, 212, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Custom styling to hide streamlit sidebar and make it homepage feel */
+[data-testid="stSidebar"] {
+    display: none;
+}
+[data-testid="collapsedSidebarCodegen"] {
+    display: none;
+}
+[data-testid="stHeader"] {
+    background-color: transparent;
+}
+.reportview-container .main .block-container {
+    padding-top: 2rem;
+}
+</style>
