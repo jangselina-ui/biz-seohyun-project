@@ -246,18 +246,18 @@ with tab_members:
 with tab_timeline:
     import streamlit as st
     # 상단 타이틀 및 안내 문구
-st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>💿 앨범 타임라인 및 음반</h2>", unsafe_allow_html=True)
-st.markdown("<p style='font-size: 14px; color: #475569; text-align: center; margin-bottom:15px;'>앨범을 클릭하여 수록곡 정보와 뮤직비디오를 확인해 보세요!</p>", unsafe_allow_html=True)
+    st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>💿 앨범 타임라인 및 음반</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 14px; color: #475569; text-align: center; margin-bottom:15px;'>앨범을 클릭하여 수록곡 정보와 뮤직비디오를 확인해 보세요!</p>", unsafe_allow_html=True)
 
-# 2. 레이아웃 분할: 왼쪽(앨범 목록) 1 : 오른쪽(상세 정보) 2 비율
-col_menu, col_content = st.columns([1, 2])
+    # 2. 레이아웃 분할: 왼쪽(앨범 목록) 1 : 오른쪽(상세 정보) 2 비율
+    col_menu, col_content = st.columns([1, 2])
 
-# 앨범 버튼용 옵션 텍스트 리스트 생성
-album_options = [f"[{album['type']}] {album['title']}  ({album['date']})" for album in ALBUMS]
+    # 앨범 버튼용 옵션 텍스트 리스트 생성
+    album_options = [f"[{album['type']}] {album['title']}  ({album['date']})" for album in ALBUMS]
 
-# 3. [왼쪽 영역] 세로 버튼 타임라인 목록
-with col_menu:
-    st.markdown("<h4 style='color:#1e293b; font-weight:700; margin-bottom:10px;'>📅 앨범 목록</h4>", unsafe_allow_html=True)
+    # 3. [왼쪽 영역] 세로 버튼 타임라인 목록
+    with col_menu:
+        st.markdown("<h4 style='color:#1e293b; font-weight:700; margin-bottom:10px;'>📅 앨범 목록</h4>", unsafe_allow_html=True)
     
     for idx, label in enumerate(album_options):
         # 현재 선택된 앨범 버튼은 primary(색상 강조), 나머지는 secondary 스타일 적용
@@ -269,13 +269,13 @@ with col_menu:
             st.session_state.selected_album_idx = idx
             st.rerun()
 
-# 4. [오른쪽 영역] 선택된 앨범의 상세 정보 출력
-with col_content:
-    # 현재 선택된 앨범 데이터 가져오기
-    active_album = ALBUMS[st.session_state.selected_album_idx]
-    
-    # 오른쪽 영역 내부에서 다시 이미지(1)와 정보(2) 비율로 분할
-    col_img, col_info = st.columns([1, 2])
+    # 4. [오른쪽 영역] 선택된 앨범의 상세 정보 출력
+    with col_content:
+        # 현재 선택된 앨범 데이터 가져오기
+        active_album = ALBUMS[st.session_state.selected_album_idx]
+        
+        # 오른쪽 영역 내부에서 다시 이미지(1)와 정보(2) 비율로 분할
+        col_img, col_info = st.columns([1, 2])
     
     # 4-1. 오른쪽 내부의 왼쪽: 앨범 이미지 및 발매 정보 카드
     with col_img:
