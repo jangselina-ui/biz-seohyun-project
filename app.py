@@ -246,50 +246,81 @@ with tab_members:
 with tab_timeline:
     import streamlit as st
 
+import streamlit as st
 
+
+# 상단 타이틀 및 안내 문구
 st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>💿 앨범 타임라인 및 음반</h2>", unsafe_allow_html=True)
-st.markdown("<p style='font-size: 14px; color: #475569; text-align: center; margin-bottom:15px;'>앨범을 클릭하여 수록곡 정보와 뮤직비디오를 확인해보세요.</p>", unsafe_allow_html=True)
+st.markdown("<p style='font-size: 14px; color: #475569; text-align: center; margin-bottom:15px;'>앨범을 클릭하여 수록곡 정보와 뮤직비디오를 확인해 보세요!</p>", unsafe_allow_html=True)
 
-# 1. 크게 왼쪽(메뉴)과 오른쪽(상세정보) 영역을 나눕니다. (예: 1:2 비율)
+# 2. 레이아웃 분할: 왼쪽(앨범 목록) 1 : 오른쪽(상세 정보) 2 비율
 col_menu, col_content = st.columns([1, 2])
 
-# 앨범 옵션 텍스트 리스트 생성
-album_options = [f"[{album['type']}] {album['title']} ({album['date']})" for album in ALBUMS]
+# 앨범 버튼용 옵션 텍스트 리스트 생성
+album_options = [f"[{album['type']}] {album['title']}  ({album['date']})" for album in ALBUMS]
 
-# 2. 왼쪽 컬럼: 세로로 앨범 버튼들을 생성
+# 3. [왼쪽 영역] 세로 버튼 타임라인 목록
 with col_menu:
-    st.write("### 📅 앨범 목록") # 타임라인 느낌의 타이틀
+    st.markdown("<h4 style='color:#1e293b; font-weight:700; margin-bottom:10px;'>📅 앨범 목록</h4>", unsafe_allow_html=True)
     
     for idx, label in enumerate(album_options):
-        # 현재 선택된 앨범 버튼은 다른 버튼들과 시각적으로 구분되도록 
-        # type="primary"를 주어 강조 효과를 냅니다.
+        # 현재 선택된 앨범 버튼은 primary(색상 강조), 나머지는 secondary 스타일 적용
         is_selected = (st.session_state.selected_album_idx == idx)
         btn_type = "primary" if is_selected else "secondary"
         
-        # 버튼을 세로로 순서대로 배치
-        if st.button(label, key=f"btn_{idx}", type=btn_type, use_container_width=True):
+        # 버튼 생성 및 클릭 이벤트 처리 (드롭다운 대체)
+        if st.button(label, key=f"album_btn_{idx}", type=btn_type, use_container_width=True):
             st.session_state.selected_album_idx = idx
             st.rerun()
 
-# 3. 오른쪽 컬럼: 선택된 앨범의 상세 정보 표시
+# 4. [오른쪽 영역] 선택된 앨범의 상세 정보 출력
 with col_content:
-    st.write("---") # 구분선
+    # 현재 선택된 앨범 데이터 가져오기
     active_album = ALBUMS[st.session_state.selected_album_idx]
     
-    st.write(f"### 🎵 {active_album['title']} 상세 정보")
+    # 오른쪽 영역 내부에서 다시 이미지(1)와 정보(2) 비율로 분할
+    col_img, col_info = st.columns([1, 2])
     
-    # 내부에서 이미지와 텍스트를 또 나누고 싶다면 중첩 column 활용
-    col_img, col_info = st.columns([1, 1.5])
-    
+    # 4-1. 오른쪽 내부의 왼쪽: 앨범 이미지 및 발매 정보 카드
     with col_img:
-        # 여기에 이미지 출력 코드 작성 (예: st.image(active_album['img_url']))
-        st.write("📷 [앨범 커버 이미지 위치]") 
+        # 기존 Album Cover render 함수 호출
+        render_image(f"assets/{active_album['id']}.png", f"{active_album['title']} 앨범 커버", f"{active_album['id']}.png")
+        st.write("")
         
+        # 기존 발매일 및 앨범 구분 HTML 카드
+        st.markdown(
+            f"""
+            <div style='background: white; padding: 15px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); text-align: center;'>
+                <span style='font-size: 13px; color: #64748b;'>발매일</span><br>
+                <b style='font-size: 16px; color: #1e293b;'>{active_album['date']}</b><br><br>
+                <span style='font-size: 13px; color: #64748b;'>앨범 구분</span><br>
+                <b style='font-size: 16px; color: #1e293b;'>{active_album['type']}</b>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+    # 4-2. 오른쪽 내부의 오른쪽: 제목, 소개글, 수록곡, 뮤직비디오
     with col_info:
-        # 여기에 수록곡, 발매일 등 앨범 정보 출력
-        st.write(f"**발매일:** {active_album['date']}")
-        st.write(f"**타입:** {active_album['type']}")
-        st.write("**수록곡 리스트:** ...")
+        # 타이틀 및 타이틀곡 정보
+        st.markdown(f"<h2 style='color: #0891b2; margin-bottom: 5px; font-weight:800; line-height:1.2;'>{active_album['title']}</h2>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-size: 16px; font-weight: bold; color: #059669;'>타이틀곡: {active_album['title_song']}</p>", unsafe_allow_html=True)
+        st.write("---")
+        
+        # 앨범 정보 및 소개글
+        st.markdown("<h5 style='color:#1e293b; font-weight:700;'>📖 앨범 정보 및 소개</h5>", unsafe_allow_html=True)
+        st.write(active_album["info"])
+        st.write("")
+        
+        # 수록곡 리스트 (TITLE 강조 포함)
+        st.markdown("<h5 style='color:#1e293b; font-weight:700;'>🎵 수록곡 리스트</h5>", unsafe_allow_html=True)
+        tracks_formatted = "\n".join([f"- **{track}**" if "[TITLE]" in track else f"- {track}" for track in active_album["tracks"]])
+        st.markdown(tracks_formatted)
+        st.write("")
+        
+        # 유튜브 뮤직비디오
+        st.markdown(f"<h5 style='color:#1e293b; font-weight:700;'>🎬 '{active_album['title_song']}' 공식 뮤직비디오 감상</h5>", unsafe_allow_html=True)
+        st.video(active_album["youtube_url"])
 
 # --- 4. GROWTH STORY TAB ---
 with tab_growth:
