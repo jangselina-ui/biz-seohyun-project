@@ -67,7 +67,7 @@ ALBUMS = [
         "youtube_url": "https://youtu.be/dh684FWByO4?si=0d38Fut-jpSVg-4T",
         "theme_color": "rgba(16, 185, 129, 0.1)",
         "tracks": ["1. 조깅 [TITLE]", "2. 수박깨러가", "3. Straight Line", "4. Missing Call (Feat. 수란)", "5. 충분히", "6. Flare"],
-        "info": "시간의 흐름에 따라 혹은 다양한 풍경을 하나의 프레임 안에 담아낸 '파노라마' 사진처럼, LUCY Mini Album 'PANORAMA' 속 6개의 트랙 안에 다양한 여름의 단상들을 담아냈다. 여름날 아침의 싱그럽고 푸른 하늘을 연상케 하는 타이틀곡 '조깅'부터 한여름 밤 페스티벌의 열기를 담은 'Flare'까지 시간의 흐름을 읽을 수 있는 배열을 통해 점점 더 짙어지는 여름의 농도를 느낄 수 있도록 펼쳐 냈다."
+        "info": "시간의 흐름에 따라 혹은 다양한 풍경을 하나의 프레임 안에 담아낸 '파노라마' 사진처럼, LUCY Mini Album 'PANORAMA' 속 6개의 트랙 안에 다양한 여름의 단상들을 담아냈다. \n\n 여름날 아침의 싱그럽고 푸른 하늘을 연상케 하는 타이틀곡 '조깅'부터 한여름 밤 페스티벌의 열기를 담은 'Flare'까지 시간의 흐름을 읽을 수 있는 배열을 통해 점점 더 짙어지는 여름의 농도를 느낄 수 있도록 펼쳐 냈다."
     },
     {
         "id": "snooze",
@@ -86,7 +86,7 @@ ALBUMS = [
         "type": "싱글 3집",
         "date": "2021.02.16",
         "title_song": "히어로 (Hero)",
-        "youtube_url": "https://www.youtube.com/watch?v=eD5iJ-7S65E",
+        "youtube_url": "https://youtu.be/V-eHkQ_YABo?si=fFl1whzr9mx8VUY5",
         "theme_color": "rgba(99, 102, 241, 0.1)",
         "tracks": ["1. 히어로 [TITLE]", "2. 난로", "3. Outro (뒤돌아보면)"],
         "info": "겉으로 드러나지 않은 따스한 내면의 이야기를 담은 앨범, 루시가 지난해 봄부터 달려온 사계절 서사를 완성하는 작품이다. 사랑하는 사람 앞에서만큼은 히어로가 되고 싶은 마음을 담은 타이틀곡 '히어로'를 통해 루시표 사랑의 메시지를 전한다. 내 자신이 보잘것없어 보여도 나를 사랑해 주는 사람을 통해 스스로의 가치를 깨닫고, 힘들 때 곁에 있어 주겠다는 따뜻한 위로를 노래한다."
@@ -96,11 +96,11 @@ ALBUMS = [
         "title": "Gatcha!",
         "type": "싱글 4집",
         "date": "2021.06.16",
-        "title_song": "I Got U (아지랑이)",
-        "youtube_url": "https://www.youtube.com/watch?v=Jm5yN5-kG_g",
+        "title_song": "I Got U",
+        "youtube_url": "https://youtu.be/p_DczUl8x60?si=J6EYhPU6H1FfxnwG",
         "theme_color": "rgba(236, 72, 153, 0.1)",
-        "tracks": ["1. I Got U [TITLE]", "2. 어이쿠 (One by One)", "3. Buddy", "4. 봄인지 여름인지 (Wonder)"],
-        "info": "\"무엇이 나올지 모르는 뽑기 기계처럼 인생은 늘 미지의 새로운 하루를 내어준다\"는 의미를 담고 있다. 어떤 하루든 'Gatcha!'하고 집어 들어 게임처럼 즐길 수 있기를 바라는 응원의 메시지를 담았다. 뽑기가 내어준 당신의 하루가 So BAD일 때도, So NICE일 때도 늘 곁에서 힘이 되어주고 싶다는 루시의 응원 에너지가 담겨 있다."
+        "tracks": ["1. I Got U [TITLE]", "2. One by One", "3. Buddy", "4. 봄인지 여름인지"],
+        "info": "무엇이 나올지 모르는 뽑기 기계처럼 인생은 늘 미지의 새로운 하루를 내어준다. 어떤 하루든 Gatcha! 하고 집어 들고는 게임처럼 하루를 즐길 수 있는 사람이 될 수 있을까?\n\n뽑기가 내어준 당신의 하루가 So BAD 일 때도 So NICE 일 때도 LUCY는 늘 당신의 곁에서 하루를 채워주는 응원의 에너지를 건네고 싶은 마음을 담았다."
     },
     {
         "id": "blue",
@@ -108,10 +108,10 @@ ALBUMS = [
         "type": "미니 2집",
         "date": "2021.12.07",
         "title_song": "떼굴떼굴",
-        "youtube_url": "https://www.youtube.com/watch?v=zS1Q4c1-s5A",
+        "youtube_url": "https://youtu.be/zak9lL2EHho?si=s_vnnOCcaY4sEH8E",
         "theme_color": "rgba(59, 130, 246, 0.1)",
-        "tracks": ["1. 떼굴떼굴 [TITLE]", "2. 맞네 (You're Right)", "3. 해가 뜨는 밤 (Eclipse)", "4. 꿈 (Dream)", "5. 놓지 않을게 (Hug)", "6. 결국 아무것도 알 수 없었지만 (Sad Ending)"],
-        "info": "LUCY의 2nd EP 《BLUE》는 밴드 LUCY 자체를 테마화하여, 멤버 개개인의 음악적 감성과 풍부한 표현력을 조명하는 동시에, 이들이 하나가 되었을 때 일으키는 조화로운 시너지를 담아낸 앨범이다. \"네 가지 BLUE로 그려낸 단 하나의 'BLUE'\"를 슬로건으로 내세우며 \"서로 다른 채도와 온도의 BLUE를 지녔지만, 함께일 때 우리는 가장 따뜻한 BLUE가 된다\"는 메시지를 전한다."
+        "tracks": ["1. 떼굴떼굴 [TITLE]", "2. 맞네", "3. 해가 뜨는 밤", "4. 꿈", "5. 놓지 않을게", "6. 결국 아무것도 알 수 없었지만"],
+        "info": "LUCY의 2nd EP 《BLUE》는 밴드 LUCY 자체를 테마화하여, 멤버 개개인의 음악적 감성과 풍부한 표현력을 조명하는 동시에, 이들이 하나가 되었을 때 일으키는 조화로운 시너지를 담아냈다. \n\n \"서로 다른 채도와 온도의 BLUE를 지녔지만, 함께일 때 우리는 가장 따뜻한 BLUE가 된다\""
     },
     {
         "id": "childhood",
@@ -119,10 +119,10 @@ ALBUMS = [
         "type": "정규 1집",
         "date": "2022.08.17",
         "title_song": "놀이 (PLAY)",
-        "youtube_url": "https://www.youtube.com/watch?v=kYJvM99T73k",
+        "youtube_url": "https://youtu.be/wFJxzoljf10?si=WQ5TQ41VZgwLlUqA",
         "theme_color": "rgba(139, 92, 246, 0.1)",
-        "tracks": ["1. Know Knows", "2. 놀이 [TITLE]", "3. 우동 (U DONG)", "4. 도라희 (DOH)", "5. 채워 (Prequel)", "6. 지레 (Ji-rae)", "7. 이 밤을 잃고 싶지 않아", "8. 무색 (Colorless)", "9. Opening", "10. Ending", "11. We Will Fly Away (Feat. 송은혜)", "12. 나는 너고 너는 나야 (You Are My Light)", "13. 드라이브 (Drive)", "14. 세이브 미 (Save Me)", "15. 아지랑이 (Haze) - CD Only"],
-        "info": "LUCY가 데뷔 2년 만에 발매한 첫 번째 정규 앨범이다. 'Childhood'는 자유, 동심, 순수한 마음을 지닌 유년기를 뜻하며, 이를 잃지 않고자 하는 LUCY의 염원이 담긴 모토이자 아이덴티티이다. 장르에 국한되지 않는 다양한 시도를 통해 자유로움과 에너지를 표현했으며, LUCY 특유의 꾸밈없고 현실적이면서도 따뜻한 가사들이 돋보인다."
+        "tracks": ["1. Knowhow", "2. MP3" "3. 놀이 [TITLE]", "4. 10sec", "5. 넌 혹시, 난 괜히", "6. Domino (feat.디핵)", "7. 파울", "8. 내 쓸쓸함은 차갑지 않아요", "9. 이미 다 알고 있었지만", "10. 이 밤을 잊지 말아요", "11. 무색", "12. Opening", "13. Ending", "14. We Will Fly Away (Feat. 송은혜)", "15. 나는 너야"],
+        "info": "자유이자 동심 그리고 순수한 마음을 지닌 유년기를 뜻하는 'Childhood'는 이 모든 것을 잃지 않고자 하는 LUCY의 염원이 담긴 그들의 모토이자 아이덴티티이며, 초심 같은 단어이다. \n\n이번 앨범에서 그들은 장르에 국한되거나 규정되지 않은 다양한 시도를 통하여 자유로움과 에너지를 표현하며, 그들만의 꾸밈없고 현실적이고도 따뜻한 가사들이 이를 뒷받침 한다."
     },
     {
         "id": "insert_coin",
