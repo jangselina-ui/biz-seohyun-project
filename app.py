@@ -259,15 +259,15 @@ with tab_timeline:
     with col_menu:
         st.markdown("<h4 style='color:#1e293b; font-weight:700; margin-bottom:10px;'>📅 앨범 목록</h4>", unsafe_allow_html=True)
     
-    for idx, label in enumerate(album_options):
-        # 현재 선택된 앨범 버튼은 primary(색상 강조), 나머지는 secondary 스타일 적용
-        is_selected = (st.session_state.selected_album_idx == idx)
-        btn_type = "primary" if is_selected else "secondary"
+        for idx, label in enumerate(album_options):
+            # 현재 선택된 앨범 버튼은 primary(색상 강조), 나머지는 secondary 스타일 적용
+            is_selected = (st.session_state.selected_album_idx == idx)
+            btn_type = "primary" if is_selected else "secondary"
         
-        # 버튼 생성 및 클릭 이벤트 처리 (드롭다운 대체)
-        if st.button(label, key=f"album_btn_{idx}", type=btn_type, use_container_width=True):
-            st.session_state.selected_album_idx = idx
-            st.rerun()
+            # 버튼 생성 및 클릭 이벤트 처리 (드롭다운 대체)
+            if st.button(label, key=f"album_btn_{idx}", type=btn_type, use_container_width=True):
+                st.session_state.selected_album_idx = idx
+                st.rerun()
 
     # 4. [오른쪽 영역] 선택된 앨범의 상세 정보 출력
     with col_content:
