@@ -290,62 +290,7 @@ with tab_timeline:
     </style>
     """, unsafe_allow_html=True)
 
-    # 2. 앨범 선택 드롭다운 (실제 상태 변경)
-    album_options = [f"[{album['type']}] {album['title']}  ({album['date']})" for album in ALBUMS]
-    selected_label = st.selectbox(
-        "앨범을 선택하세요",
-        album_options,
-        index=st.session_state.selected_album_idx,
-        label_visibility="collapsed"
-    )
-    new_idx = album_options.index(selected_label)
-    if new_idx != st.session_state.selected_album_idx:
-        st.session_state.selected_album_idx = new_idx
-        st.rerun()
-
-    st.write("---")
     
-    # 2. Selected Album Details
-    active_album = ALBUMS[st.session_state.selected_album_idx]
-    
-    col_img, col_info = st.columns([1, 2])
-    
-    with col_img:
-        # Album Cover render
-        render_image(f"assets/{active_album['id']}.png", f"{active_album['title']} 앨범 커버", f"{active_album['id']}.png")
-        st.write("")
-        st.markdown(
-            f"""
-            <div style='background: white; padding: 15px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); text-align: center;'>
-                <span style='font-size: 13px; color: #64748b;'>발매일</span><br>
-                <b style='font-size: 16px; color: #1e293b;'>{active_album['date']}</b><br><br>
-                <span style='font-size: 13px; color: #64748b;'>앨범 구분</span><br>
-                <b style='font-size: 16px; color: #1e293b;'>{active_album['type']}</b>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-        
-    with col_info:
-        st.markdown(f"<h2 style='color: #0891b2; margin-bottom: 5px; font-weight:800;'>{active_album['title']}</h2>", unsafe_allow_html=True)
-        st.markdown(f"<p style='font-size: 16px; font-weight: bold; color: #059669;'>타이틀곡: {active_album['title_song']}</p>", unsafe_allow_html=True)
-        st.write("---")
-        
-        # Album Description - 나무위키 개요 및 소개글
-        st.markdown("<h5 style='color:#1e293b; font-weight:700;'>📖 앨범 정보 및 소개 (나무위키 발췌)</h5>", unsafe_allow_html=True)
-        st.write(active_album["info"])
-        st.write("")
-        
-        # Tracklist
-        st.markdown("<h5 style='color:#1e293b; font-weight:700;'>🎵 수록곡 리스트</h5>", unsafe_allow_html=True)
-        tracks_formatted = "\n".join([f"- **{track}**" if "[TITLE]" in track else f"- {track}" for track in active_album["tracks"]])
-        st.markdown(tracks_formatted)
-        st.write("")
-        
-        # Youtube video embed
-        st.markdown(f"<h5 style='color:#1e293b; font-weight:700;'>🎬 '{active_album['title_song']}' 공식 뮤직비디오 감상</h5>", unsafe_allow_html=True)
-        st.video(active_album["youtube_url"])
-
 # --- 4. GROWTH STORY TAB ---
 with tab_growth:
     st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>📈 루시의 성장 스토리</h2>", unsafe_allow_html=True)
