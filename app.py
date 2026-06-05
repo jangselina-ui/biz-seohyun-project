@@ -248,17 +248,61 @@ with tab_timeline:
     
     st.markdown("<p style='font-size: 14px; color: #475569; text-align: center; margin-bottom:15px;'>앨범을 클릭하여 나무위키 공식 수록곡 정보와 뮤직비디오를 확인해 보세요!</p>", unsafe_allow_html=True)
     
-    # 1. Timeline Navigation (Clickable Nodes)
-    cols = st.columns(len(ALBUMS))
+    # 1. 가로 스크롤 시각 타임라인
+    cards_html = ""
     for idx, album in enumerate(ALBUMS):
-        with cols[idx]:
-            is_active = (idx == st.session_state.selected_album_idx)
-            btn_style = "primary" if is_active else "secondary"
-            
-            # Simple design representation: Date + Album Title
-            if st.button(f"{album['date']}\n\n{album['title']}", key=f"timeline_{album['id']}", use_container_width=True, type=btn_style):
-                st.session_state.selected_album_idx = idx
-                
+        is_active = (idx == st.session_state.selected_album_idx)
+        if is_active:
+            card_style = "background: linear-gradient(135deg, #0891b2, #0e7490); color: white; border: 2px solid #0891b2; box-shadow: 0 4px 16px rgba(8,145,178,0.35);"
+            date_style = "color: rgba(255,255,255,0.8);"
+            type_style = "color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.15);"
+            dot_style = "background: white;"
+        else:
+            card_style = "background: white; color: #334155; border: 2px solid #e2e8f0;"
+            date_style = "color: #64748b;"
+            type_style = "color: #64748b; background: #f1f5f9;"
+            dot_style = "background: #cbd5e1;"
+
+        cards_html += f"""
+        <div style="min-width:130px; max-width:130px; padding:14px 10px; border-radius:14px; flex-shrink:0; text-align:center; {card_style} transition: all 0.2s;">
+            <div style="font-size:11px; margin-bottom:6px; font-weight:600; {date_style}">{album['date']}</div>
+            <div style="width:8px; height:8px; border-radius:50%; margin:0 auto 8px auto; {dot_style}"></div>
+            <div style="font-size:14px; font-weight:800; margin-bottom:6px; line-height:1.3;">{album['title']}</div>
+            <div style="font-size:10px; padding:3px 6px; border-radius:20px; display:inline-block; font-weight:600; {type_style}">{album['type']}</div>
+        </div>
+        """
+
+    st.markdown(f"""
+    <div style="overflow-x: auto; display: flex; gap: 10px; padding: 16px 4px 20px 4px;
+                scrollbar-width: thin; scrollbar-color: #0891b2 #f1f5f9;">
+        {cards_html}
+    </div>
+    <style>
+    div[data-testid="stMarkdownContainer"] > div::-webkit-scrollbar {{
+        height: 6px;
+    }}
+    div[data-testid="stMarkdownContainer"] > div::-webkit-scrollbar-track {{
+        background: #f1f5f9; border-radius: 10px;
+    }}
+    div[data-testid="stMarkdownContainer"] > div::-webkit-scrollbar-thumb {{
+        background: #0891b2; border-radius: 10px;
+    }}
+    </style>
+    """, unsafe_allow_html=True)
+
+    # 2. 앨범 선택 드롭다운 (실제 상태 변경)
+    album_options = [f"[{album['type']}] {album['title']}  ({album['date']})" for album in ALBUMS]
+    selected_label = st.selectbox(
+        "앨범을 선택하세요",
+        album_options,
+        index=st.session_state.selected_album_idx,
+        label_visibility="collapsed"
+    )
+    new_idx = album_options.index(selected_label)
+    if new_idx != st.session_state.selected_album_idx:
+        st.session_state.selected_album_idx = new_idx
+        st.rerun()
+
     st.write("---")
     
     # 2. Selected Album Details
