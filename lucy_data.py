@@ -121,7 +121,7 @@ ALBUMS = [
         "title_song": "놀이 (PLAY)",
         "youtube_url": "https://youtu.be/wFJxzoljf10?si=WQ5TQ41VZgwLlUqA",
         "theme_color": "rgba(139, 92, 246, 0.1)",
-        "tracks": ["1. Knowhow", "2. MP3" "3. 놀이 [TITLE]", "4. 10sec", "5. 넌 혹시, 난 괜히", "6. Domino (feat.디핵)", "7. 파울", "8. 내 쓸쓸함은 차갑지 않아요", "9. 이미 다 알고 있었지만", "10. 이 밤을 잊지 말아요", "11. 무색", "12. Opening", "13. Ending", "14. We Will Fly Away (Feat. 송은혜)", "15. 나는 너야"],
+        "tracks": ["1. Knowhow", "2. MP3", "3. 놀이 [TITLE]", "4. 10sec", "5. 넌 혹시, 난 괜히", "6. Domino (feat.디핵)", "7. 파울", "8. 내 쓸쓸함은 차갑지 않아요", "9. 이미 다 알고 있었지만", "10. 이 밤을 잊지 말아요", "11. 무색", "12. Opening", "13. Ending", "14. We Will Fly Away (Feat. 송은혜)", "15. 나는 너야"],
         "info": "자유이자 동심 그리고 순수한 마음을 지닌 유년기를 뜻하는 'Childhood'는 이 모든 것을 잃지 않고자 하는 LUCY의 염원이 담긴 그들의 모토이자 아이덴티티이며, 초심 같은 단어이다. \n\n이번 앨범에서 그들은 장르에 국한되거나 규정되지 않은 다양한 시도를 통하여 자유로움과 에너지를 표현하며, 그들만의 꾸밈없고 현실적이고도 따뜻한 가사들이 이를 뒷받침 한다."
     },
     {
@@ -130,21 +130,21 @@ ALBUMS = [
         "type": "미니 3집",
         "date": "2023.02.23",
         "title_song": "아니 근데 진짜",
-        "youtube_url": "https://www.youtube.com/watch?v=k4U-3f8_4Gg",
+        "youtube_url": "https://youtu.be/KcLQhPR-a2w?si=lXmuz_Mit8pabsh3",
         "theme_color": "rgba(220, 38, 38, 0.1)",
-        "tracks": ["1. 바쁘거든 (Intro)", "2. 아니 근데 진짜 (Unbelievable) [TITLE]", "3. 띠띡 (Never in Vain)", "4. 채워 (Forget About It)", "5. 내버려둬 (Leave Me Alone)"],
-        "info": "게임에서 목숨을 다했을 때 다시 시작할 기회를 얻는 'INSERT COIN'을 테마로 한 앨범으로, LUCY의 음악이 누군가에게 새로운 불씨가 되기를 바라는 희망적인 메시지를 담았다. LUCY 특유의 청량하고 따뜻한 곡들과 그동안 보여준 적 없는 강렬한 사운드의 곡들이 공존하며, 마치 동전의 양면처럼 반전 넘치는 구성을 보여준다. 멤버 조원상이 전곡 작사, 작곡, 프로듀싱에 참여했다."
+        "tracks": ["1. 아니 근데 진짜 (Unbelievable) [TITLE]", "2. 바쁘거든", "3. Never in Vain", "4. 채워"],
+        "info": "게임 오버의 상황에서 <INSERT COIN>을 통해 새로운 목숨을 부여하고, 새로운 도전을 나아가는 것처럼, 그들의 음악이 누군가에게 새로운 불씨가 되길 바라고 있다."
     },
     {
         "id": "yeol",
-        "title": "열 (10)",
+        "title": "열",
         "type": "미니 4집",
         "date": "2023.08.17",
-        "title_song": "아지랑이 (Haze)",
-        "youtube_url": "https://www.youtube.com/watch?v=uSW1iY2iacc",
+        "title_song": "아지랑이",
+        "youtube_url": "https://youtu.be/uSW1iY2iacc?si=PQPmjY5O46_wWq_I",
         "theme_color": "rgba(79, 70, 229, 0.1)",
-        "tracks": ["1. 뜨거 (Hot!)", "2. 아지랑이 (Haze) [TITLE]", "3. Magic", "4. 내 가슴속에 들어온 낙엽은"],
-        "info": "누구나 겪게 되는 '열병'의 시기를 관통하며 한층 더 성숙해진 청춘의 모습을 담은 앨범이다. 열병을 이겨내고 있는 이들에게는 견뎌낼 힘을, 이미 겪은 이들에게는 위로와 다음 열병을 이겨낼 용기를 전하고자 하는 마음을 담았다. 타이틀곡 '아지랑이'를 비롯해 여름의 열기를 표현한 EDM, 강렬한 록 사운드 등 다양한 장르의 곡들이 수록되어 있으며, 멤버 전원이 작업에 참여해 완성도를 높였다."
+        "tracks": ["1. 뜨거", "2. 아지랑이 [TITLE]", "3. Magic", "4. 내버려"],
+        "info": "누구에게나 열병의 시기들은 어김없이 찾아오고, 때로는 버거움에 무너지기도 한다.\n버텨낸 열병이 휩쓸고 간 자리에는 상처와 함께 조금 더 성숙해진 자신이 남는다.\n이 앨범에 담긴 음악을 통해 열병을 이겨내고 있는 이들에게는 견뎌낼 수 있는 힘을,\n열병을 겪은 이에게는 위로와 불시에 찾아올지 모를 다음 열병을 이겨낼 수 있는 용기를 얻기를 바라는 마음을 담았다."
     },
     {
         "id": "boogie_man",
@@ -155,7 +155,7 @@ ALBUMS = [
         "youtube_url": "https://youtu.be/MjMVg4sBEr8?si=flfyV1oCD03H1jww",
         "theme_color": "rgba(139, 92, 246, 0.1)",
         "tracks": ["1. Boogie Man [TITLE]", "2. Over The Christmas"],
-        "info": "LUCY의 염원이 담긴 모토이자 아이덴티티이다. 장르에 국한되지 않는 다양한 시도를 통해 자유로움과 에너지를 표현했으며, LUCY 특유의 꾸밈없고 현실적이면서도 따뜻한 가사들이 돋보인다."
+        "info": "어두운 밤 나타나 누군가의 발목을 움켜쥐고는 옷장 속으로 끌고 가는 Boogie Man\n우리는 이 존재가 나를 선택하고, 나를 찾아온 이유를 나로부터 찾고자 하였다.\n\n내 마음속 작은 욕망의 위시리스트가 모여, 옷장 속 내가 그린 또 다른 세계로 나를 데려가 주길 바라며 Boogie Man을 불러온 것이 아닐까."
     }
 ]
 
