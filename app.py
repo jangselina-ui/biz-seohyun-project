@@ -245,11 +245,7 @@ with tab_members:
 # --- 3. TIMELINE TAB ---
 with tab_timeline:
     import streamlit as st
-
-import streamlit as st
-
-
-# 상단 타이틀 및 안내 문구
+    # 상단 타이틀 및 안내 문구
 st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>💿 앨범 타임라인 및 음반</h2>", unsafe_allow_html=True)
 st.markdown("<p style='font-size: 14px; color: #475569; text-align: center; margin-bottom:15px;'>앨범을 클릭하여 수록곡 정보와 뮤직비디오를 확인해 보세요!</p>", unsafe_allow_html=True)
 
@@ -321,6 +317,7 @@ with col_content:
         # 유튜브 뮤직비디오
         st.markdown(f"<h5 style='color:#1e293b; font-weight:700;'>🎬 '{active_album['title_song']}' 공식 뮤직비디오 감상</h5>", unsafe_allow_html=True)
         st.video(active_album["youtube_url"])
+
 
 # --- 4. GROWTH STORY TAB ---
 with tab_growth:
