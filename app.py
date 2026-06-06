@@ -416,7 +416,7 @@ with tab_growth:
 
 # --- 5. RECOMMENDATIONS TAB ---
 with tab_recommend:
-    st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>💌 오늘의 감정 추천곡</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>💌 오늘의 추천곡</h2>", unsafe_allow_html=True)
     
     # Selection options instead of text input
     st.markdown("### 🤔 지금 당신의 기분이나 상황은 어떤가요?")
@@ -452,7 +452,7 @@ with tab_recommend:
                 f'  <h2 style="color: #0f172a; margin-top: 15px; margin-bottom: 2px; font-weight: 800; font-size: 24px;">{safe_song}</h2>'
                 f'  <p style="color: #64748b; font-size: 14px; margin-bottom: 15px;">앨범: {safe_album}</p>'
                 f'  <div style="background: #f8fafc; border-left: 3px solid #10b981; padding: 12px; margin: 15px 0; border-radius: 0 8px 8px 0;">'
-                f'    <span style="font-size: 12px; color: #059669; font-weight: bold; display: block; margin-bottom: 5px;">✍️ 왈왈이 감성 킬링 가사</span>'
+                f'    <span style="font-size: 12px; color: #059669; font-weight: bold; display: block; margin-bottom: 5px;">✍️ 가사</span>'
                 f'    <i style="color: #1e293b; font-size: 14.5px; font-weight: 500; display: block; tab-size: 4;">"{safe_lyric}"</i>'
                 f'  </div>'
                 f'  <p style="font-size: 14px; line-height: 1.7; color: #475569; margin-bottom: 0;">{safe_description}</p>'
