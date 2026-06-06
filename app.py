@@ -433,7 +433,7 @@ with tab_recommend:
         
         with col_rec_info:
             st.markdown(
-                f"""
+                f'''
                 <div class="glass-card" style="border-left: 5px solid #06b6d4 !important; background: white !important; color: #1e293b; height: 100%;">
                     <span style="font-size: 12px; background: rgba(6,182,212,0.1); color: #0891b2; padding: 4px 10px; border-radius: 20px; font-weight: bold;">
                         RECOMMENDED SONG
@@ -450,7 +450,7 @@ with tab_recommend:
                         {matched_rec['description']}
                     </p>
                 </div>
-                """,
+                ''',
                 unsafe_allow_html=True
             )
             
