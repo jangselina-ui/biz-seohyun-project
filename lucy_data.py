@@ -247,15 +247,15 @@ MOOD_RECOMMENDATIONS = [
         "option_text": "🏃 찌푸린 하늘을 벗어나 벅차오르게 달리고 싶을 때!",
         "song": "조깅 (Jogging)",
         "album": "PANORAMA (미니 1집)",
-        "lyric": "\"반대로 내가 가고 싶은 대로만 간다면\n\n그저 틀린 길은 아닐 걸\"",
+        "lyric": "반대로 내가 가고 싶은 대로만 간다면 \n\n그저 틀린 길은 아닐 걸",
         "description": "속도감 있는 빠른 드럼 비트와 청량하게 터지는 신예찬의 바이올린 솔로가 당신의 심장박동을 높여줄 것입니다. 러닝이나 맑은 날 드라이브에 완벽히 어울립니다.",
         "youtube_url": "https://youtu.be/dh684FWByO4?si=-C-OiRpEzjGSmikh"
     },
     {
         "id": "comfort",
         "option_text": "☕ 지친 하루의 끝, 따뜻하고 포근한 위로가 필요할 때",
-        "song": "선잠 (Snooze)",
-        "album": "선잠 (싱글 2집)",
+        "song": "떼굴떼굴 (Rolling Rolling)",
+        "album": "떼굴떼굴 (Rolling Rolling) (미니 2집)",
         "lyric": "\"너의 마음에 작은 온기를 불어넣을 선잠을 빌려줄게\"",
         "description": "바쁜 일상 속에 지친 마음에 달콤한 쪽잠 같은 위로를 안겨주는 곡입니다. 아기자기한 시계 태엽 소리와 조원상의 부드러운 베이스, 멤버들의 따뜻한 음색이 포근하게 감싸줍니다.",
         "youtube_url": "https://www.youtube.com/watch?v=i90vB5g9ZtI"
