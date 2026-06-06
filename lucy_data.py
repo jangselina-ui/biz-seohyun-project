@@ -247,7 +247,7 @@ MOOD_RECOMMENDATIONS = [
         "option_text": "🏃 찌푸린 하늘을 벗어나 벅차오르게 달리고 싶을 때!",
         "song": "조깅 (Jogging)",
         "album": "PANORAMA (미니 1집)",
-        "lyric": "반대로 내가 가고 싶은 대로만 간다면 \n그저 틀린 길은 아닐 걸",
+        "lyric": "반대로 내가 가고 싶은 대로만 간다면. 그저 틀린 길은 아닐 걸",
         "description": "속도감 있는 빠른 드럼 비트와 청량하게 터지는 신예찬의 바이올린 솔로가 당신의 심장박동을 높여줄 것입니다. 러닝이나 맑은 날 드라이브에 완벽히 어울립니다.",
         "youtube_url": "https://youtu.be/dh684FWByO4?si=-C-OiRpEzjGSmikh"
     },
@@ -256,44 +256,44 @@ MOOD_RECOMMENDATIONS = [
         "option_text": "☕ 지친 하루의 끝, 밝은 위로가 필요할 때",
         "song": "떼굴떼굴 (Rolling Rolling)",
         "album": "떼굴떼굴 (Rolling Rolling) (미니 2집)",
-        "lyric": "다시 하루는 시작되고 숨 쉴 틈 없이 세상은 돌아만 가 하루 종일 모두 떼굴떼굴 굴러 이대론 안 될 것만 같아 내일을 그리던 그때로 뒤로 back",
+        "lyric": "다시 하루는 시작되고 숨 쉴 틈 없이 세상은 돌아만 가. 하루 종일 모두 떼굴떼굴 굴러 이대론 안 될 것만 같아. 내일을 그리던 그때로 뒤로 back",
         "description": "바쁘게 굴러가는 사회 속에서 지친 사람들에게 잠시 쉬어가도 괜찮다는 위로를 건내줍니다. 청량한 밴드 사운드와 바이올린 선율이 어우러져, 지친 일상을 환기해 주는 밝고 경쾌한 분위기입니다.",
-        "youtube_url": "https://www.youtube.com/watch?v=i90vB5g9ZtI"
+        "youtube_url": "https://youtu.be/zak9lL2EHho?si=ftvvrHbH6ffqzmdZ"
     },
     {
         "id": "energy",
         "option_text": "🔥 무기력함에서 탈출하여 자신감을 얻고 싶을 때",
         "song": "히어로 (Hero)",
         "album": "INSIDE (싱글 3집)",
-        "lyric": "내겐 두 손의 빔 하늘을 가르는 날개 괴력의 힘은 없지만 \n그래 너의 곁에선 주인공이 된 것 같아 \n너에게 내 세상을 줄게",
+        "lyric": "내겐 두 손의 빔 하늘을 가르는 날개 괴력의 힘은 없지만. 그래 너의 곁에선 주인공이 된 것 같아. 너에게 내 세상을 줄게",
         "description": "너에게만큼은 언제나 특별한 영웅이 되어주겠다는 다짐을 담은 곡이고, 애니메이션 주제가를 듣는 듯한 밝은 멜로디와 희망찬 가사가 특징입니다. 최상엽의 시원한 보컬과 역동적인 드럼비트가 에너지를 충전해 줍니다.",
-        "youtube_url": "https://www.youtube.com/watch?v=eD5iJ-7S65E"
+        "youtube_url": "https://youtu.be/V-eHkQ_YABo?si=YhEGZmubIKVHWRqv"
     },
     {
         "id": "healing",
         "option_text": "🌸 봄날의 화사한 설렘을 느끼고 싶을 때",
         "song": "개화 (Flowering)",
         "album": "DEAR. (데뷔 싱글)",
-        "lyric": "내게 찾아온 봄처럼 너의 마음에 꽃을 피워줄게",
-        "description": "루시의 탄생이자 정체성이 담긴 명곡. 겨울을 이겨낸 꽃망울처럼 화사하고 아름다운 바이올린 선율이 흘러나오며, 새로운 시작을 앞둔 분들에게 강력한 희망을 전합니다.",
-        "youtube_url": "https://www.youtube.com/watch?v=rR_AVo1RaNw"
+        "lyric": "바람아 내게 봄을 데려와 줘. 벚꽃잎이 흩날리듯이. 시간아 나의 봄에 스며들어 점점 더 더 더.",
+        "description": "루시의 탄생이자 정체성이 담긴 명곡. 서정적이면서도 아름다운 바이올린 솔로 연주가 봄날의 화사함을 더욱 더 잘 표현해줍니다.",
+        "youtube_url": "https://youtu.be/WQdFA55hT80?si=ZSOpM7gNG2hCDY0o"
     },
     {
         "id": "sweet",
-        "option_text": "🧸 짝사랑의 몽글몽글하고 귀여운 설렘을 느끼고 싶을 때",
+        "option_text": "🧸 자존감을 충전하고 싶을 때",
         "song": "아니 근데 진짜 (Unbelievable)",
         "album": "INSERT COIN (미니 3집)",
-        "lyric": "\"아니 근데 진짜 너 예쁘다니까\n\n새벽을 깨우는 환한 햇살같아\"",
-        "description": "귀여운 게임 8비트 사운드와 대화체를 차용한 사랑스러운 가사가 매력적입니다. 듣는 내내 미소를 짓게 만드는 연인 혹은 썸타는 연인들의 대표 추천곡입니다.",
-        "youtube_url": "https://www.youtube.com/watch?v=k4U-3f8_4Gg"
+        "lyric": "아니 근데 진짜 너 예쁘다니까. 새벽을 깨우는 환한 햇살같아. 아니 근데 진짜로 너만 모르나봐. 온 세상이 널 사랑하고 있는 걸.",
+        "description": "한국인들이 대화할 때 습관처럼 쓰는 말인 '아니근데진짜'를 재치 있게 활용한 사랑스러운 가사가 특징입니다. 게임 8비트 사운드와 리드미컬한 기타, 베이스 라인이 도드라지며 듣는 순간 자존감이 올라가고 기분이 좋아지는 에너지를 뿜어내는 곡입니다.",
+        "youtube_url": "https://youtu.be/KcLQhPR-a2w?si=4WMG6DWTK8SIFNt6"
     },
     {
         "id": "sentimental",
-        "option_text": "🍂 울적하거나 아련하게 마음 깊은 곳을 터치하고 싶을 때",
+        "option_text": "🍃 버거운 삶을 잠시 내려놓고 위로를 받고 싶을 때",
         "song": "아지랑이 (Haze)",
         "album": "열 (미니 4집)",
-        "lyric": "“아직 서툰 청춘이라 그래, 우리 흔들려도 괜찮아”",
-        "description": "성장의 통통을 겪는 모든 서툰 청춘들에게 건네는 루시의 담담하지만 묵직한 고백입니다. 신예찬의 애절하고 묵직한 바이올린 현소리가 가슴을 뭉클하게 만듭니다.",
-        "youtube_url": "https://www.youtube.com/watch?v=uSW1iY2iacc"
+        "lyric": "아아 원래 그런가봐요. 사랑하기 위한 삶. 살기 위해 한 사랑",
+        "description": "성장의 통증을 겪는 모든 청춘들에게 건네는 루시의 위로곡입니다. 신예찬의 애절하고 묵직한 바이올린이 가슴을 뭉클하게 만듭니다.",
+        "youtube_url": "https://youtu.be/uSW1iY2iacc?si=WVE_mBLy_CCl4Liu"
     }
 ]
