@@ -184,17 +184,36 @@ with tab_home:
 with tab_members:
     st.markdown("<h2 class='gradient-text-blue' style='font-size: 1.8rem; margin-bottom: 15px;'>🎸 멤버 소개 (4인 4색)</h2>", unsafe_allow_html=True)
     
+    # 1. 디자인을 깨뜨리는 원인인 개별 div 구조를 잡는 대신, 
+    #    st.columns 전체를 감싸거나 스타일을 지정할 수 있도록 CSS를 상단에 주입합니다.
+    st.markdown(
+        """
+        <style>
+        /* 각 컬럼 내부의 스트림릿 컨테이너에 카드 스타일 적용 */
+        [data-testid="stColumn"] {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 10px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
     # Create 4 columns for 4 members
     cols = st.columns(4)
     
     for i, member in enumerate(MEMBERS):
         with cols[i]:
-            st.markdown(f"<div class='member-card'>", unsafe_allow_html=True)
+            # [수정] 위아래를 쪼개던 임의의 <div class='member-card'>를 제거했습니다.
             
             # Display photo or placeholder
             render_image(member["image_path"], f"{member['name'].split()[0]} 프로필", f"{member['id']}.png")
             
-            # Text Info (MBTI 제외 및 밝은 색상 반영)
+            # Text Info
             st.markdown(
                 f"""
                 <div style='margin-top: 15px;'>
@@ -221,8 +240,8 @@ with tab_members:
                 """,
                 unsafe_allow_html=True
             )
-            st.markdown("</div>", unsafe_allow_html=True)
-            
+            # [수정] </div> 태그 제거
+
     # Render detail window below if selected
     if st.session_state.selected_member:
         selected_mem = next((m for m in MEMBERS if m["id"] == st.session_state.selected_member), None)
@@ -230,7 +249,7 @@ with tab_members:
             st.write("---")
             st.markdown(
                 f"""
-                <div class="glass-card" style="border-left: 5px solid {selected_mem['color']} !important; background: white !important; color: #1e293b;">
+                <div class="glass-card" style="border-left: 5px solid {selected_mem['color']} !important; background: white !important; color: #1e293b; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <h3 style="color: {selected_mem['color']}; margin: 0; font-weight:800;">✨ {selected_mem['name']} 상세 설명</h3>
                     </div>
