@@ -432,22 +432,29 @@ with tab_recommend:
         col_rec_info, col_rec_vid = st.columns([1, 1])
         
         with col_rec_info:
+            # 데이터 내부에 있을지 모르는 쌍따옴표(")를 HTML 안전 문자인 &quot;로 치환합니다.
+            # 이렇게 하면 HTML 문법이 깨지는 것을 완벽히 방지할 수 있습니다.
+            safe_song = str(matched_rec['song']).replace('"', '&quot;')
+            safe_album = str(matched_rec['album']).replace('"', '&quot;')
+            safe_lyric = str(matched_rec['lyric']).replace('"', '&quot;')
+            safe_description = str(matched_rec['description']).replace('"', '&quot;')
+
             st.markdown(
                 f'''
-                <div class="glass-card" style="border-left: 5px solid #06b6d4 !important; background: white !important; color: #1e293b; height: 100%;">
+                <div class="glass-card" style="border-left: 5px solid #06b6d4 !important; background: white !important; color: #1e293b; height: 100%; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                     <span style="font-size: 12px; background: rgba(6,182,212,0.1); color: #0891b2; padding: 4px 10px; border-radius: 20px; font-weight: bold;">
                         RECOMMENDED SONG
                     </span>
-                    <h2 style="color: #0f172a; margin-top: 15px; margin-bottom: 2px; font-weight:800;">{matched_rec['song']}</h2>
-                    <p style="color: #64748b; font-size: 14px;">앨범: {matched_rec['album']}</p>
+                    <h2 style="color: #0f172a; margin-top: 15px; margin-bottom: 2px; font-weight: 800;">{safe_song}</h2>
+                    <p style="color: #64748b; font-size: 14px;">앨범: {safe_album}</p>
                     
                     <div style="background: #f8fafc; border-left: 3px solid #10b981; padding: 12px; margin: 20px 0; border-radius: 0 8px 8px 0;">
                         <span style="font-size: 12px; color: #059669; font-weight: bold; display: block; margin-bottom: 5px;">✍️ 왈왈이 감성 킬링 가사</span>
-                        <i style="color: #1e293b; font-size: 14.5px; font-weight:500;">{matched_rec['lyric']}</i>
+                        <i style="color: #1e293b; font-size: 14.5px; font-weight: 500;">"{safe_lyric}"</i>
                     </div>
                     
                     <p style="font-size: 14px; line-height: 1.7; color: #475569; margin-bottom: 0;">
-                        {matched_rec['description']}
+                        {safe_description}
                     </p>
                 </div>
                 ''',
