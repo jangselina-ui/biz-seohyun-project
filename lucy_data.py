@@ -8,7 +8,7 @@ MEMBERS = [
         "name": "신예찬 (Shin Yechan)",
         "birth": "1992년 6월 13일",
         "role": "리더, 바이올린 (Leader, Violin)",
-        "namu_url": "https://namu.wiki/w/%EC%8B%A0%EC%98%88%EC%B0%AC(LUCY)",
+        "namu_url": "https://namu.wiki/w/%EC%8B%A0%EC%98%88%EC%B0%AC",
         "image_path": "assets/yechan.png",
         "color": "#06B6D4",  # Cyan
         "description": "무대 위에서 날아다니는 열정적인 연주와 끊어질 듯한 활이 시그니처인 귀여운 맏내 리더! 클래식 바이올린과 버스킹 경험을 바탕으로 루시의 독창적인 바이올린 리드 사운드를 담당합니다."
@@ -218,10 +218,10 @@ ALBUMS = [
         "type": "정규 2집",
         "date": "2026.04.29",
         "title_song": "전체관람가",
-        "youtube_url": "https://youtu.be/K25eYCAXknQ",
+        "youtube_url": "https://youtu.be/mMr52FVf6qk?si=1O45IEcEmM2yJbc1",
         "theme_color": "rgba(99, 102, 241, 0.1)",
-        "tracks": ["1. 발아", "2. 전체관람가 [TITLE]", "3. 카멜레온", "4. 하마 (Childish ver.)", "5. 사랑은 어쩌고 (Childish ver.)", "6. EIO (Childish ver.)", "7. Porch Light (Feat. 남제현)", "8. Bleu", "9. 미워하지 않아도 될 수많은 이유 (Childish ver.)", "10. 구구절절", "11. 잠깨 (Childish ver.)", "12. 다급해져 (Feat. 원슈타인) (Childish ver.)", "13. 뚝딱 (Childish ver.)", "14. 내가 더 (Childish ver.)", "15. 사랑한 영원"],
-        "info": "삭막한 현실 속에서 잊고 지냈던 '동심'을 찾아가는 여정을 담은 LUCY의 두 번째 정규 앨범이다. 신광일의 군 복귀 후 완전체로서 미니 6집 《와장창》과 미니 7집 《선》의 수록곡들을 신광일의 목소리로 재녹음한 'Childish ver.'과 신곡 5곡을 함께 담아 총 15곡으로 구성되었다.\n\n타이틀곡 '전체관람가'는 멤버 조원상이 작사, 작곡, 편곡에 참여한 곡으로, 완전체 LUCY의 귀환을 알리는 선언과도 같은 작품이다. 체조경기장(KSPO DOME) 공연을 매진시키며 루시의 새 전성기를 열었다."
+        "tracks": ["1. 발아", "2. 전체관람가 [TITLE]", "3. 카멜레온", "4. 하마 (Childish ver.)", "5. 사랑은 어쩌고 (Childish ver.)", "6. EIO (Childish ver.)", "7. Porch Light (Feat. 남제현)", "8. bleu", "9. 미워하지 않아도 될 수많은 이유 (Childish ver.)", "10. 구구절절", "11. 잠깨 (Childish ver.)", "12. 다급해져 (Feat. 원슈타인) (Childish ver.)", "13. 뚝딱 (Childish ver.)", "14. 내가 더 (Childish ver.)", "15. 사랑한 영원"],
+        "info": "쉴 새 없이 돌아가는 삭막한 현실 속에서, 한없이 유치하고 순수했던 나를 찾아 헤매다.\n\n우리는 본연에 깃든, 유치하고 순수한 자신을 발견하지 못하고, 어른의 모습으로 버거워하며 살아간다.\n삭막한 현실에서 나다움을 지켜내며, 지루하지 않고 즐겁게 살아갈 방법은 우리 모두에게 내재된 ‘동심’을 찾아내어 마주하는 것이다. 그때 비로소 우리는 진짜 현실을 살아가게 될 것이다."
     }
 ]
 
@@ -247,16 +247,16 @@ MOOD_RECOMMENDATIONS = [
         "option_text": "🏃 찌푸린 하늘을 벗어나 벅차오르게 달리고 싶을 때!",
         "song": "조깅 (Jogging)",
         "album": "PANORAMA (미니 1집)",
-        "lyric": "“머리 위로 쏟아지는 뜨거운 해를 피해 힘껏 뛰어봐”",
+        "lyric": "\"반대로 내가 가고 싶은 대로만 간다면\n\n그저 틀린 길은 아닐 걸\"",
         "description": "속도감 있는 빠른 드럼 비트와 청량하게 터지는 신예찬의 바이올린 솔로가 당신의 심장박동을 높여줄 것입니다. 러닝이나 맑은 날 드라이브에 완벽히 어울립니다.",
-        "youtube_url": "https://www.youtube.com/watch?v=h6W6c1Y-X2g"
+        "youtube_url": "https://youtu.be/YdWBnqQgqSk?si=16TnXX8uBM1FObon"
     },
     {
         "id": "comfort",
         "option_text": "☕ 지친 하루의 끝, 따뜻하고 포근한 위로가 필요할 때",
         "song": "선잠 (Snooze)",
         "album": "선잠 (싱글 2집)",
-        "lyric": "“너의 마음에 작은 온기를 불어넣을 선잠을 빌려줄게”",
+        "lyric": "\"너의 마음에 작은 온기를 불어넣을 선잠을 빌려줄게\"",
         "description": "바쁜 일상 속에 지친 마음에 달콤한 쪽잠 같은 위로를 안겨주는 곡입니다. 아기자기한 시계 태엽 소리와 조원상의 부드러운 베이스, 멤버들의 따뜻한 음색이 포근하게 감싸줍니다.",
         "youtube_url": "https://www.youtube.com/watch?v=i90vB5g9ZtI"
     },
@@ -283,7 +283,7 @@ MOOD_RECOMMENDATIONS = [
         "option_text": "🧸 짝사랑의 몽글몽글하고 귀여운 설렘을 느끼고 싶을 때",
         "song": "아니 근데 진짜 (Unbelievable)",
         "album": "INSERT COIN (미니 3집)",
-        "lyric": "“아니 근데 진짜 너 엄청 예쁘다니까!”",
+        "lyric": "\"아니 근데 진짜 너 예쁘다니까\n\n새벽을 깨우는 환한 햇살같아\"",
         "description": "귀여운 게임 8비트 사운드와 대화체를 차용한 사랑스러운 가사가 매력적입니다. 듣는 내내 미소를 짓게 만드는 연인 혹은 썸타는 연인들의 대표 추천곡입니다.",
         "youtube_url": "https://www.youtube.com/watch?v=k4U-3f8_4Gg"
     },
