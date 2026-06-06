@@ -432,34 +432,35 @@ with tab_recommend:
         col_rec_info, col_rec_vid = st.columns([1, 1])
         
         with col_rec_info:
-            # 데이터 내부에 있을지 모르는 쌍따옴표(")를 HTML 안전 문자인 &quot;로 치환합니다.
-            # 이렇게 하면 HTML 문법이 깨지는 것을 완벽히 방지할 수 있습니다.
-            safe_song = str(matched_rec['song']).replace('"', '&quot;')
-            safe_album = str(matched_rec['album']).replace('"', '&quot;')
-            safe_lyric = str(matched_rec['lyric']).replace('"', '&quot;')
-            safe_description = str(matched_rec['description']).replace('"', '&quot;')
+            # 1. 데이터 내부에 숨어있는 줄바꿈, 쌍따옴표, 백슬래시 등을 안전하게 정제합니다.
+            def clean_text(text):
+                if not text:
+                    return ""
+                # 줄바꿈 제거 및 따옴표 기호가 파이썬 f-string을 깨뜨리지 않도록 일반 홑따옴표로 변환
+                cleaned = str(text).replace("\n", " ").replace("\r", "").replace('"', "'")
+                return cleaned
 
-            st.markdown(
-                f'''
-                <div class="glass-card" style="border-left: 5px solid #06b6d4 !important; background: white !important; color: #1e293b; height: 100%; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                    <span style="font-size: 12px; background: rgba(6,182,212,0.1); color: #0891b2; padding: 4px 10px; border-radius: 20px; font-weight: bold;">
-                        RECOMMENDED SONG
-                    </span>
-                    <h2 style="color: #0f172a; margin-top: 15px; margin-bottom: 2px; font-weight: 800;">{safe_song}</h2>
-                    <p style="color: #64748b; font-size: 14px;">앨범: {safe_album}</p>
-                    
-                    <div style="background: #f8fafc; border-left: 3px solid #10b981; padding: 12px; margin: 20px 0; border-radius: 0 8px 8px 0;">
-                        <span style="font-size: 12px; color: #059669; font-weight: bold; display: block; margin-bottom: 5px;">✍️ 왈왈이 감성 킬링 가사</span>
-                        <i style="color: #1e293b; font-size: 14.5px; font-weight: 500;">"{safe_lyric}"</i>
-                    </div>
-                    
-                    <p style="font-size: 14px; line-height: 1.7; color: #475569; margin-bottom: 0;">
-                        {safe_description}
-                    </p>
-                </div>
-                ''',
-                unsafe_allow_html=True
+            safe_song = clean_text(matched_rec['song'])
+            safe_album = clean_text(matched_rec['album'])
+            safe_lyric = clean_text(matched_rec['lyric'])
+            safe_description = clean_text(matched_rec['description'])
+
+            # 2. 버그 방지를 위해 HTML 문자열 내부의 줄바꿈(Enter)을 완전히 없애고 한 줄로 이어붙입니다.
+            html_body = (
+                f'<div class="glass-card" style="border-left: 5px solid #06b6d4 !important; background: white !important; color: #1e293b; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">'
+                f'  <span style="font-size: 12px; background: rgba(6,182,212,0.1); color: #0891b2; padding: 4px 10px; border-radius: 20px; font-weight: bold;">RECOMMENDED SONG</span>'
+                f'  <h2 style="color: #0f172a; margin-top: 15px; margin-bottom: 2px; font-weight: 800; font-size: 24px;">{safe_song}</h2>'
+                f'  <p style="color: #64748b; font-size: 14px; margin-bottom: 15px;">앨범: {safe_album}</p>'
+                f'  <div style="background: #f8fafc; border-left: 3px solid #10b981; padding: 12px; margin: 15px 0; border-radius: 0 8px 8px 0;">'
+                f'    <span style="font-size: 12px; color: #059669; font-weight: bold; display: block; margin-bottom: 5px;">✍️ 왈왈이 감성 킬링 가사</span>'
+                f'    <i style="color: #1e293b; font-size: 14.5px; font-weight: 500; display: block; tab-size: 4;">"{safe_lyric}"</i>'
+                f'  </div>'
+                f'  <p style="font-size: 14px; line-height: 1.7; color: #475569; margin-bottom: 0;">{safe_description}</p>'
+                f'</div>'
             )
+
+            # 3. 정제된 HTML 한 줄을 st.markdown에 주입합니다.
+            st.markdown(html_body, unsafe_allow_html=True)
             
         with col_rec_vid:
             st.markdown(f"##### 🎬 '{matched_rec['song']}' 공식 뮤직비디오 바로 감상하기")
