@@ -256,7 +256,7 @@ MOOD_RECOMMENDATIONS = [
         "option_text": "☕ 지친 하루의 끝, 밝은 위로가 필요할 때",
         "song": "떼굴떼굴 (Rolling Rolling)",
         "album": "떼굴떼굴 (Rolling Rolling) (미니 2집)",
-        "lyric": "다시 하루는 시작되고 숨 쉴 틈 없이 세상은 돌아만 가 \n하루 종일 모두 떼굴떼굴 굴러 이대론 안 될 것만 같아 \n내일을 그리던 그때로 뒤로 back",
+        "lyric": "다시 하루는 시작되고 숨 쉴 틈 없이 세상은 돌아만 가 하루 종일 모두 떼굴떼굴 굴러 이대론 안 될 것만 같아 내일을 그리던 그때로 뒤로 back",
         "description": "바쁘게 굴러가는 사회 속에서 지친 사람들에게 잠시 쉬어가도 괜찮다는 위로를 건내줍니다. 청량한 밴드 사운드와 바이올린 선율이 어우러져, 지친 일상을 환기해 주는 밝고 경쾌한 분위기입니다.",
         "youtube_url": "https://www.youtube.com/watch?v=i90vB5g9ZtI"
     },
