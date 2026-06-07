@@ -22,7 +22,41 @@ def load_styles(file_name):
 
 load_styles("style.html")
 
+# SQLite Database Setup for Guestbook
+DB_FILE = "guestbook.db"
 
+def init_db():
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS cheers (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            avatar TEXT NOT NULL,
+            message TEXT NOT NULL,
+            timestamp TEXT NOT NULL
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+def save_cheer(name, avatar, message):
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    c.execute("INSERT INTO cheers (name, avatar, message, timestamp) VALUES (?, ?, ?, ?)",
+              (name, avatar, message, now))
+    conn.commit()
+    conn.close()
+
+def get_cheers():
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+    c.execute("SELECT name, avatar, message, timestamp FROM cheers ORDER BY id DESC")
+    rows = c.fetchall()
+    conn.close()
+    return rows
+    
 # Initialize DB
 init_db()
 
