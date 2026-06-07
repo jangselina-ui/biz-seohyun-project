@@ -122,9 +122,9 @@ with tab_home:
         st.markdown(
             """
             <div class="glass-card" style="height: 100%; background: white !important;">
-                <h3 style="color: #0891b2; display: flex; align-items: center; margin-top:0;"><span style="font-size: 24px; margin-right: 8px;">🎻</span> 바이올린 리드 사운드</h3>
+                <h3 style="color: #0891b2; display: flex; align-items: center; margin-top:0;"><span style="font-size: 24px; margin-right: 8px;">🎻</span> 바이올린 사운드</h3>
                 <p style="font-size: 14px; color: #475569; line-height: 1.7;">
-                    일반적인 밴드의 일렉트릭 기타 솔로나 키보드 대신, <b>리더 신예찬의 정열적인 바이올린 연주</b>가 리드 악기로 활약합니다. 
+                    일반적인 밴드의 일렉트릭 기타 솔로나 키보드 대신, <b>리더 신예찬의 바이올린 솔로 연주</b>가 활약합니다. 
                     클래식한 우아함과 폭발적인 락 에너지가 만나 루시만의 독보적인 <b>'하이브리드 팝락(Hybrid Pop-Rock)'</b> 사운드를 완성합니다.
                 </p>
             </div>
@@ -150,7 +150,7 @@ with tab_home:
         st.markdown(
             """
             <div class="glass-card" style="height: 100%; background: white !important;">
-                <h3 style="color: #4f46e5; display: flex; align-items: center; margin-top:0;"><span style="font-size: 24px; margin-right: 8px;">🎧</span> 일상과 동화 속 엠비언스 & 가사</h3>
+                <h3 style="color: #4f46e5; display: flex; align-items: center; margin-top:0;"><span style="font-size: 24px; margin-right: 8px;">🎧</span> 일상과 동화 속 소리 & 가사</h3>
                 <p style="font-size: 14px; color: #475569; line-height: 1.7;">
                     바람소리, 물소리, 지하철 안내음, 발걸음 소리 등 조원상 프로듀서가 직접 채집한 <b>일상 속 공간음(Ambience Sound)</b>을 
                     곡 곳곳에 녹여내어 생생함을 더합니다. 여기에 한 편의 문학 작품이나 동화 같은 시적이고 따뜻한 가사가 위로를 건넵니다.
@@ -163,7 +163,7 @@ with tab_home:
     st.write("")
     
     # SuperBand Formation Story
-    st.markdown("### 🏆 결성 스토리 : JTBC 슈퍼밴드가 낳은 최고의 선물")
+    st.markdown("### 🏆 결성 스토리 : JTBC 슈퍼밴드 프로그램으로 결성")
     st.markdown(
         """
         <div class="glass-card" style="padding: 30px; background: white !important;">
@@ -171,7 +171,7 @@ with tab_home:
                 천재적인 베이시스트이자 프로듀서 <b>조원상</b>, 폭발적인 에너지를 가진 버스커 바이올리니스트 <b>신예찬</b>, 
                 페루 유학 경력과 청아한 미성을 보유한 드러머/보컬 <b>신광일</b>이 오디션 프로그램 '슈퍼밴드'를 통해 뜻을 함께 모았습니다. 
                 이후 보컬의 깊이를 더해줄 감성 보컬리스트 <b>최상엽</b>이 정식 합류하며 현재의 무적 4인조 <b>LUCY</b>가 탄생했습니다.<br><br>
-                결성 초기부터 '지구상의 유일무이한 바이올린 록 밴드'라는 찬사를 받으며 매 무대 신선한 충격을 주었던 이들은, 
+                결성 초기부터 매 무대 신선한 충격을 주었던 이들은, 
                 현재 K-밴드 트렌드의 최전선에서 청량함과 예술성을 동시에 잡은 대표 아이콘으로 굳건히 자리매김하고 있습니다.
             </div>
         </div>
