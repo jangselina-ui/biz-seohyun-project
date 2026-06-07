@@ -361,7 +361,7 @@ with tab_growth:
     
     with tab_concert:
         st.markdown("### 🎪 연도별 단독 콘서트 관객 동원력 추이")
-        st.write("루시는 라이브 무대에서 진가를 발휘하며 매 활동마다 대형 콘서트 홀로 진출하고 있습니다.")
+        st.write("루시는 라이브 무대에서 진가를 발휘하며 매 활동마다 대형 콘서트 홀로 진출하고 있습니다.\n(공연 관객수는 단일 회차를 기준으로 한 1일 기준 관객수로 산정)")
         
         chart_data_concert = CONCERT_GROWTH.copy()
         chart_data_concert = chart_data_concert.set_index("시기")
@@ -376,10 +376,11 @@ with tab_growth:
                 <div style='background: white; padding: 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06);'>
                     <h4 style='color: #0891b2; margin-top: 0; font-weight:700;'>주요 이정표</h4>
                     <ul style='font-size: 13px; color: #334155; padding-left: 20px; line-height:1.7;'>
-                        <li><b>2021.06</b>: 첫 단독 콘서트 1,700명 규모 매진</li>
-                        <li><b>2022.03</b>: 첫 정규 앨범 기념 3,000명 동원</li>
-                        <li><b>2023.08</b>: 장충체육관 5회 단독 7,600명 돌파 (4.4배 성장)</li>
-                        <li><b>2026.05</b>: 대망의 <b>체조경기장(KSPO DOME)</b> 입성! 양일간 15,000명 이상의 관객을 동원하며 탑티어 밴드로 우뚝 섰습니다.</li>
+                        <li><b>2021.06</b>: 첫 단독 콘서트 블루스퀘어홀에서 1,000명 규모 매진</li>
+                        <li><b>2023.03</b>: 약 1,200명 동원, 이전과 같은 공연장이지만 코로나19 거리두기 해제 후 스탠딩 좌석 확보</li>
+                        <li><b>2023.08</b>: 5th 콘서트 <열,다섯>에서 장충체육관 3,500명 동원</li>
+                        <li><b>2025.11</b>: 약 5,000명 규모의 무대에서 8th 콘서트<LUCID LINE> 진행</li>
+                        <li><b>2026.05</b>: 9th 콘서트 <ISLAND>을 진행, 올림픽 체조경기장 KSPO DOME에서 하루 기준 12,500석 매진</li>
                     </ul>
                 </div>
                 """,
