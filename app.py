@@ -87,13 +87,12 @@ st.markdown("<h1 class='gradient-title' style='font-size: 3.5rem; margin-top: 10
 st.markdown("<p style='text-align: center; font-size: 18px; color: #475569; font-weight: 500; margin-bottom: 25px;'>청춘을 노래하는 청량 밴드 루시(LUCY)의 공식 아지트</p>", unsafe_allow_html=True)
 
 # Top Horizontal Menu (Segmented Tabs Layout)
-tab_home, tab_members, tab_timeline, tab_growth, tab_recommend, tab_guestbook = st.tabs([
+tab_home, tab_members, tab_timeline, tab_growth, tab_recommend = st.tabs([
     "🏠 루시 소개 (Home)",
     "🎸 멤버 프로필 (Members)",
     "💿 앨범 타임라인 (Timeline)",
     "📈 성장 스토리 (Growth)",
-    "💌 오늘의 감정 추천곡 (Recommendations)",
-    "💬 왈왈이 응원보드 (Guestbook)"
+    "💌 오늘의 감정 추천곡 (Recommendations)"
 ])
 
 # --- 1. HOME TAB ---
