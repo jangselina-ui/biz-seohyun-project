@@ -150,7 +150,7 @@ with tab_home:
         st.markdown(
             """
             <div class="glass-card" style="height: 100%; background: white !important;">
-                <h3 style="color: #4f46e5; display: flex; align-items: center; margin-top:0;"><span style="font-size: 24px; margin-right: 8px;">🎧</span> 일상과 동화 속 소리 & 가사</h3>
+                <h3 style="color: #4f46e5; display: flex; align-items: center; margin-top:0;"><span style="font-size: 24px; margin-right: 8px;">🎧</span> 일상 속 소리와 동화같은 가사</h3>
                 <p style="font-size: 14px; color: #475569; line-height: 1.7;">
                     바람소리, 물소리, 지하철 안내음, 발걸음 소리 등 조원상 프로듀서가 직접 채집한 <b>일상 속 공간음(Ambience Sound)</b>을 
                     곡 곳곳에 녹여내어 생생함을 더합니다. 여기에 한 편의 문학 작품이나 동화 같은 시적이고 따뜻한 가사가 위로를 건넵니다.
@@ -378,8 +378,8 @@ with tab_growth:
                     <ul style='font-size: 13px; color: #334155; padding-left: 20px; line-height:1.7;'>
                         <li><b>2021.06</b>: 첫 단독 콘서트 블루스퀘어홀에서 <b>1,000명</b> 규모 매진</li>
                         <li><b>2023.03</b>: 약 <b>1,200명</b> 동원, 이전과 같은 공연장이지만 코로나19 거리두기 해제 후 스탠딩 좌석 확보</li>
-                        <li><b>2023.08</b>: 5th 콘서트 <열,다섯>에서 장충체육관 <b>3,500명</b> 동원</li>
-                        <li><b>2025.11</b>: 약 <b>5,000명</b> 규모의 무대에서 8th 콘서트<LUCID LINE> 진행</li>
+                        <li><b>2023.08</b>: 5th 콘서트 &lt;열,다섯&gt;에서 장충체육관 <b>3,500명</b> 동원</li>
+                        <li><b>2025.11</b>: 약 <b>5,000명</b> 규모의 무대에서 8th 콘서트&lt;LUCID LINE&gt; 진행</li>
                         <li><b>2026.05</b>: 9th 콘서트 &lt;ISLAND&gt;를 진행, 올림픽 체조경기장 <b>KSPO DOME</b>에서 하루 기준 <b>12,500석</b> 매진</li>
                     </ul>
                 </div>
