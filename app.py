@@ -83,8 +83,8 @@ def render_image(image_path, label, filename):
         st.markdown(placeholder_html, unsafe_allow_html=True)
 
 # Main Header (Homepage style)
-st.markdown("<h1 class='gradient-title' style='font-size: 3.5rem; margin-top: 10px; margin-bottom: 5px;'>🎻 LUCY SPACE</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-size: 18px; color: #475569; font-weight: 500; margin-bottom: 25px;'>청춘을 노래하는 청량 밴드 루시(LUCY)의 공식 아지트</p>", unsafe_allow_html=True)
+st.markdown("<h1 class='gradient-title' style='font-size: 3.5rem; margin-top: 10px; margin-bottom: 5px;'>🎻🎸 LUCY SPACE 🎤🥁</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size: 18px; color: #475569; font-weight: 500; margin-bottom: 25px;'>청춘을 노래하는 밴드 루시(LUCY) 소개 홈페이지</p>", unsafe_allow_html=True)
 
 # Top Horizontal Menu (Segmented Tabs Layout)
 tab_home, tab_members, tab_timeline, tab_growth, tab_recommend = st.tabs([
