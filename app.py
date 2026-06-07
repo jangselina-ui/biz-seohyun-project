@@ -376,11 +376,11 @@ with tab_growth:
                 <div style='background: white; padding: 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06);'>
                     <h4 style='color: #0891b2; margin-top: 0; font-weight:700;'>주요 이정표</h4>
                     <ul style='font-size: 13px; color: #334155; padding-left: 20px; line-height:1.7;'>
-                        <li><b>2021.06</b>: 첫 단독 콘서트 블루스퀘어홀에서 1,000명 규모 매진</li>
-                        <li><b>2023.03</b>: 약 1,200명 동원, 이전과 같은 공연장이지만 코로나19 거리두기 해제 후 스탠딩 좌석 확보</li>
-                        <li><b>2023.08</b>: 5th 콘서트 <열,다섯>에서 장충체육관 3,500명 동원</li>
-                        <li><b>2025.11</b>: 약 5,000명 규모의 무대에서 8th 콘서트<LUCID LINE> 진행</li>
-                        <li><b>2026.05</b>: 9th 콘서트 <ISLAND>을 진행, 올림픽 체조경기장 KSPO DOME에서 하루 기준 12,500석 매진</li>
+                        <li><b>2021.06</b>: 첫 단독 콘서트 블루스퀘어홀에서 <b>1,000명</b> 규모 매진</li>
+                        <li><b>2023.03</b>: 약 <b>1,200명</b> 동원, 이전과 같은 공연장이지만 코로나19 거리두기 해제 후 스탠딩 좌석 확보</li>
+                        <li><b>2023.08</b>: 5th 콘서트 <열,다섯>에서 장충체육관 <b>3,500명</b> 동원</li>
+                        <li><b>2025.11</b>: 약 <b>5,000명</b> 규모의 무대에서 8th 콘서트<LUCID LINE> 진행</li>
+                        <li><b>2026.05</b>: 9th 콘서트 <ISLAND>을 진행, 올림픽 체조경기장 <b>KSPO DOME</b>에서 하루 기준 <b>12,500석</b> 매진</li>
                     </ul>
                 </div>
                 """,
@@ -406,7 +406,7 @@ with tab_growth:
                     <ul style='font-size: 13px; color: #334155; padding-left: 20px; line-height:1.7;'>
                         <li><b>PANORAMA</b>: 초동 약 850장으로 출발</li>
                         <li><b>Childhood</b>: 데뷔 후 첫 정규 음반 초동 24,000장</li>
-                        <li><b>열 (10)</b>: 탄탄한 성장 가도를 달리며 초동 64,000장 돌파</li>
+                        <li><b>열</b>: 탄탄한 성장 가도를 달리며 초동 64,000장 돌파</li>
                         <li><b>Childish</b>: 정규 2집 발매 첫 주 만에 <b>103,562장</b> 돌파로 첫 <b>초동 10만 장 돌파(커리어하이)</b> 달성!</li>
                     </ul>
                 </div>
